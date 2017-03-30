@@ -16,16 +16,12 @@ class Ring{
    ellipse(x,y,30,30); 
   }
   
-void update(){ 
- tx += 0.005;
- ty += 0.005;
- x = noise(tx);
- y = noise (ty);
- y = map(y,0,1,0,height);
- x = map(x, 0, 1, 0, width);
-  
-}
-  
-  
-  
+ void update(){ 
+  tx += 0.005;
+  ty += 0.005;
+  x = noise(tx);
+  y = noise (ty);
+  y = map(y,0,1,0,height);
+  x = map(x, 0, 1, 0, width); 
+ } 
 }
